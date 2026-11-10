@@ -1,0 +1,14 @@
+[package]
+name = "vocab"
+version = "0.1.0"
+edition = "2021"
+description = "A small command-line vocabulary trainer with spaced repetition"
+license = "MIT"
+
+[dependencies]
+# Intentionally none for now. Persistence uses a simple line-based format
+# so the project builds anywhere with just `cargo`. Candidates for later:
+# serde/serde_json (storage), clap (CLI parsing), rand (shuffling).
+
+[profile.release]
+strip = true
